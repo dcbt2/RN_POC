@@ -3,7 +3,7 @@ namespace POC_VSTS_Deployment {
     
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"POC_VSTS_Deployment.Source", typeof(global::POC_VSTS_Deployment.Source))]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"POC_VSTS_Deployment.Target", typeof(global::POC_VSTS_Deployment.Target))]
-    public sealed class Map : global::Microsoft.XLANGs.BaseTypes.TransformBase {
+    public sealed class Map : global::Microsoft.BizTalk.TestTools.Mapper.TestableMapBase {
         
         private const string _strMap = @"<?xml version=""1.0"" encoding=""UTF-16""?>
 <xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0 userCSharp"" version=""1.0"" xmlns:ns0=""http://BizTalk_Server_Project1.Target"" xmlns:s0=""http://BizTalk_Server_Project1.Source"" xmlns:userCSharp=""http://schemas.microsoft.com/BizTalk/2003/userCSharp"">

@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC_VSTS_Deployment", "POC_
 EndProject
 Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "BizTalkServerApplication_Project", "BizTalkServerApplication_Project\BizTalkServerApplication_Project.btaproj", "{850E8C4C-5C4A-44BB-B199-29F9ABFD8624}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{5B4C5D04-6C40-40CC-9863-DFDE2B320AEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{FFBAF543-4993-470E-AA5B-1D30E109D7DB}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Deployment.btdfproj = Deployment\Deployment.btdfproj
+		Deployment\InstallWizard.xml = Deployment\InstallWizard.xml
+		Deployment\License.rtf = Deployment\License.rtf
+		Deployment\PortBindingsMaster.xml = Deployment\PortBindingsMaster.xml
+		Deployment\SettingsFileGenerator.xml = Deployment\SettingsFileGenerator.xml
+		Deployment\UnInstallWizard.xml = Deployment\UnInstallWizard.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +35,10 @@ Global
 		{850E8C4C-5C4A-44BB-B199-29F9ABFD8624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{850E8C4C-5C4A-44BB-B199-29F9ABFD8624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{850E8C4C-5C4A-44BB-B199-29F9ABFD8624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4C5D04-6C40-40CC-9863-DFDE2B320AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4C5D04-6C40-40CC-9863-DFDE2B320AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4C5D04-6C40-40CC-9863-DFDE2B320AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4C5D04-6C40-40CC-9863-DFDE2B320AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

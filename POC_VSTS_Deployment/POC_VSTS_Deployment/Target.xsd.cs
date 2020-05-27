@@ -9,7 +9,7 @@ namespace POC_VSTS_Deployment {
     [Schema(@"http://BizTalk_Server_Project1.Target",@"Root")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"Root"})]
-    public sealed class Target : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class Target : Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;

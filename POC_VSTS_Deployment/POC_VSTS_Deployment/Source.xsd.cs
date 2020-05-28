@@ -20,8 +20,8 @@ namespace POC_VSTS_Deployment {
   <xs:element name=""Root"">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name=""A"" type=""xs:string"" />
-        <xs:element name=""B"" type=""xs:string"" />
+        <xs:element name=""A"" type=""xs:int"" />
+        <xs:element name=""B"" type=""xs:int"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

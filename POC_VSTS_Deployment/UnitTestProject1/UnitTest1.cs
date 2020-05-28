@@ -9,18 +9,28 @@ namespace UTBizTalkPocAzDops
     public class UnitTest1
     {
         [TestMethod]
+        public void ValidateInput()
+        {
+            Source sourceschema = new Source();
+            string Source_XML = @"C:\Users\dcBT2\Documents\GitHub\RN_POC\POC_VSTS_Deployment\UnitTestProject1\UnitTesting\Input\inputfile.xml";
+            Assert.IsTrue(sourceschema.ValidateInstance(Source_XML, Microsoft.BizTalk.TestTools.Schema.OutputInstanceType.XML));
+        }
+
+        [TestMethod]
         public void TestMap()
         {
-            // Target targetschema = new Target();
+            Source sourceschema = new Source();
+            Target targetschema = new Target();
             Map map = new Map();
 
             string Source_XML = @"C:\Users\dcBT2\Documents\GitHub\RN_POC\POC_VSTS_Deployment\UnitTestProject1\UnitTesting\Input\inputfile.xml";
             string Target_XML = @"C:\Users\dcBT2\Documents\GitHub\RN_POC\POC_VSTS_Deployment\UnitTestProject1\UnitTesting\Output\Map_Output.xml";
-
+            
             map.ValidateOutput = true;
             map.TestMap(Source_XML, Microsoft.BizTalk.TestTools.Schema.InputInstanceType.Xml,
-                Target_XML, Microsoft.BizTalk.TestTools.Schema.OutputInstanceType.XML);
+                 Target_XML, Microsoft.BizTalk.TestTools.Schema.OutputInstanceType.XML);
 
+            Assert.IsTrue(targetschema.ValidateInstance(Target_XML, Microsoft.BizTalk.TestTools.Schema.OutputInstanceType.XML));
             Assert.IsTrue(File.Exists(Target_XML));
         }
     }

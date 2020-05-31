@@ -52,14 +52,12 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>0</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;Group&gt;
         &lt;Statement Property="BTS.ReceivePortName" Operator="0" Value="POC_VSTS_Deployment.ReceivePort1" /&gt;
         &lt;/Group&gt;
-        &lt;/Filter&gt;
-      </Filter>
+        &lt;/Filter&gt;</Filter>
       <Transforms>
         <Transform FullName="POC_VSTS_Deployment.Map" AssemblyQualifiedName="POC_VSTS_Deployment.Map,POC_VSTS_Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=55d278f35259d203" />
       </Transforms>

@@ -14,8 +14,8 @@
   <RemovePersonalInformation/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>5895</WindowHeight>
-  <WindowWidth>17970</WindowWidth>
+  <WindowHeight>9465</WindowHeight>
+  <WindowWidth>24000</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -121,7 +121,7 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">SendPort1_FileName</Data></Cell>
-    <Cell ss:StyleID="s40"><Data ss:Type="String">Dev_%MessageID%.xml</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Test_%MessageID%.xml</Data></Cell>
     <Cell ss:Index="4" ss:StyleID="s40"><Data ss:Type="String">Dev_%MessageID%.xml</Data></Cell>
     <Cell ss:StyleID="s40"><Data ss:Type="String">Test_%MessageID%.xml</Data></Cell>
     <Cell ss:StyleID="s40"><Data ss:Type="String">Prod_%MessageID%.xml</Data></Cell>
@@ -155,6 +155,7 @@
     <Pane>
      <Number>2</Number>
      <ActiveRow>8</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

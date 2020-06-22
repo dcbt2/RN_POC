@@ -1,0 +1,378 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="72795390-39ed-4f24-8e9d-fff99dbf4d2f" LowerBound="1.1" HigherBound="99.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="ESB_SamplePOC" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="1d2ec852-3052-457f-8e82-e739f47ff473" ParentLink="Module_PortType" LowerBound="8.1" HigherBound="15.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="344a49a7-3990-4d33-aec8-f15a52a13aec" ParentLink="PortType_OperationDeclaration" LowerBound="10.1" HigherBound="14.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="26d4dd74-30d8-4b3e-9179-3a0789631534" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="12.13" HigherBound="12.20">
+                    <om:Property Name="Ref" Value="ESB_SamplePOC.Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="09f38ffc-8f62-4c6c-a859-9f5a608baef7" ParentLink="Module_PortType" LowerBound="15.1" HigherBound="22.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="dd827acf-6cbb-439a-8bfe-c446296a85da" ParentLink="PortType_OperationDeclaration" LowerBound="17.1" HigherBound="21.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ec92fa6a-3342-474c-910d-ef961740a247" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="19.13" HigherBound="19.26">
+                    <om:Property Name="Ref" Value="ESB_SamplePOC.RequestDenied" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e94decc9-7f5a-44fb-828a-2021ea8caf90" ParentLink="Module_PortType" LowerBound="22.1" HigherBound="29.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_3" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5badd06e-7858-4edf-9c70-e00d422d2230" ParentLink="PortType_OperationDeclaration" LowerBound="24.1" HigherBound="28.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="928101fd-4808-47bb-a7d9-c5f1b2f8d230" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="26.13" HigherBound="26.29">
+                    <om:Property Name="Ref" Value="ESB_SamplePOC.FaultMessageType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="28ca40ff-1502-4a28-a0b9-77c98144a127" ParentLink="Module_ServiceDeclaration" LowerBound="29.1" HigherBound="98.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="ee9e5b61-f6d7-4f51-9d9e-0b0d67a99ca7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="41.1" HigherBound="42.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Variable_2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="32199395-8c83-4dbd-a7e1-7863bc498b1d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="42.1" HigherBound="43.1">
+                <om:Property Name="InitialValue" Value="10" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Variable_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3ebae50f-f9a0-4ddf-a24c-194ea7a9e4ed" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="38.1" HigherBound="39.1">
+                <om:Property Name="Type" Value="ESB_SamplePOC.Request" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d4dc853f-b22d-4c3b-9394-ebd9ed7225c8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="39.1" HigherBound="40.1">
+                <om:Property Name="Type" Value="ESB_SamplePOC.RequestDenied" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8a24287f-739b-42a4-9be7-1a6028c04dcd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="40.1" HigherBound="41.1">
+                <om:Property Name="Type" Value="ESB_SamplePOC.FaultMessageType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="faultMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="dadfc1e3-39dc-4255-bbc1-66cf941d1057" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="e396e902-c72a-47e3-9391-7058dc7eb7be" ParentLink="ServiceBody_Statement" LowerBound="45.1" HigherBound="49.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="Message_1" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="8ce4da3c-57f9-4740-bd8e-a5b87a98e077" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="55.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="5be20a78-e8e7-4c91-903c-5888de805c9f" ParentLink="ComplexStatement_Statement" LowerBound="52.1" HigherBound="54.1">
+                        <om:Property Name="ClassName" Value="ESB_SamplePOC.MapToReqDenied" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="3473dd1e-5364-433f-8397-57fc6497a823" ParentLink="Transform_InputMessagePartRef" LowerBound="53.71" HigherBound="53.80">
+                            <om:Property Name="MessageRef" Value="Message_1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="87e927b9-534a-4d28-870e-4f5efeda148f" ParentLink="Transform_OutputMessagePartRef" LowerBound="53.28" HigherBound="53.37">
+                            <om:Property Name="MessageRef" Value="Message_2" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="bd55e929-e02d-4eb4-bb01-72606dd83388" ParentLink="Construct_MessageRef" LowerBound="50.23" HigherBound="50.32">
+                        <om:Property Name="Ref" Value="Message_2" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="69039a3c-9cfc-4b58-bb73-5aba6b95613f" ParentLink="ServiceBody_Statement" LowerBound="55.1" HigherBound="57.1">
+                    <om:Property Name="PortName" Value="Port_2" />
+                    <om:Property Name="MessageName" Value="Message_2" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="e1a573a2-5548-48ba-b156-474b6c4ea41c" ParentLink="ServiceBody_Statement" LowerBound="57.1" HigherBound="96.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="7127b30a-a438-4cf3-8de3-7d7603a4207d" ParentLink="ComplexStatement_Statement" LowerBound="62.1" HigherBound="67.1">
+                        <om:Property Name="Expression" Value="Variable_2 = Variable_1 / System.Convert.ToInt32(Message_1.Item.Quantity);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry (&quot;Test&quot;, Variable_2.ToString());" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Expression_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="01e81c33-9970-4371-839d-145745614865" ParentLink="Scope_Catch" LowerBound="70.1" HigherBound="94.1">
+                        <om:Property Name="ExceptionName" Value="systExc1" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="2d2a2846-4e7c-4beb-9f68-008a5b49fec8" ParentLink="Catch_Statement" LowerBound="73.1" HigherBound="79.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry (&quot;SamplePOC&quot; , systExc1.ToString());&#xD;&#xA;&#xD;&#xA;//----------------&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="04612328-4d6b-4339-aa9e-65775ac6d225" ParentLink="Catch_Statement" LowerBound="79.1" HigherBound="91.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_2" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="2e3de60b-0d76-46b0-bc0a-f775e613aec5" ParentLink="ComplexStatement_Statement" LowerBound="82.1" HigherBound="90.1">
+                                <om:Property Name="Expression" Value="faultMsg = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Set Fault Message Properties&#xD;&#xA;faultMsg.Body.FailureCategory = &quot;MessageBuild&quot;;&#xD;&#xA;faultMsg.Body.FaultCode = &quot;FaultCodeVal&quot;;&#xD;&#xA;faultMsg.Body.FaultDescription = &quot;FaultDescriptionVal&quot;;&#xD;&#xA;faultMsg.Body.FaultSeverity = Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Critical;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="8acdbfa5-5a52-4ea9-a86d-c31f4c44813b" ParentLink="Construct_MessageRef" LowerBound="80.35" HigherBound="80.43">
+                                <om:Property Name="Ref" Value="faultMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="2b5b9bb8-0cf4-482f-9d9e-e666c6028974" ParentLink="Catch_Statement" LowerBound="91.1" HigherBound="93.1">
+                            <om:Property Name="PortName" Value="Port_3" />
+                            <om:Property Name="MessageName" Value="faultMsg" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3d90213b-ec12-41bf-99f7-95ad7062ac4d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="32.1" HigherBound="34.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="ESB_SamplePOC.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="3e2c2f6e-682b-46b3-b3e0-76ab25c535c3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="32.1" HigherBound="33.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ab1722a6-69a3-4cfe-b566-fc00f3abbf0c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="34.1" HigherBound="36.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="ESB_SamplePOC.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_2" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="0ba1f35b-8b23-41be-984a-e05ce8a1ae4c" ParentLink="PortDeclaration_CLRAttribute" LowerBound="34.1" HigherBound="35.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ddb6a784-41bf-4676-803c-986d356c8d8e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="36.1" HigherBound="38.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="52" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="ESB_SamplePOC.PortType_3" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_3" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="a01d45d7-41b0-47cd-9595-34e0f896e6a6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="36.1" HigherBound="37.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1063a5c3-d78d-4888-b978-ad4dc80adade" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FaultMessageType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="6b80dacb-fb2d-4f30-a462-70df4a7abdc2" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module ESB_SamplePOC
+{
+    public messagetype FaultMessageType
+    {
+        body Microsoft.Practices.ESB.ExceptionHandling.Schemas.Faults.FaultMessage Body;
+    };
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            Request
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            RequestDenied
+        };
+    };
+    internal porttype PortType_3
+    {
+        oneway Operation_1
+        {
+            FaultMessageType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 Port_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 Port_2;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses PortType_3 Port_3;
+        message Request Message_1;
+        message RequestDenied Message_2;
+        message FaultMessageType faultMsg;
+        System.Int32 Variable_2;
+        System.Int32 Variable_1;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e396e902-c72a-47e3-9391-7058dc7eb7be")]
+            activate receive (Port_1.Operation_1, Message_1);
+            Variable_2 = 0;
+            Variable_1 = 10;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ce4da3c-57f9-4740-bd8e-a5b87a98e077")]
+            construct Message_2
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5be20a78-e8e7-4c91-903c-5888de805c9f")]
+                transform (Message_2) = ESB_SamplePOC.MapToReqDenied (Message_1);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("69039a3c-9cfc-4b58-bb73-5aba6b95613f")]
+            send (Port_2.Operation_1, Message_2);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e1a573a2-5548-48ba-b156-474b6c4ea41c")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7127b30a-a438-4cf3-8de3-7d7603a4207d")]
+                    Variable_2 = Variable_1 / System.Convert.ToInt32(Message_1.Item.Quantity);
+                    
+                    
+                    System.Diagnostics.EventLog.WriteEntry ("Test", Variable_2.ToString());
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("01e81c33-9970-4371-839d-145745614865")]
+                    catch (System.Exception systExc1)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2d2a2846-4e7c-4beb-9f68-008a5b49fec8")]
+                        System.Diagnostics.EventLog.WriteEntry ("SamplePOC" , systExc1.ToString());
+                        
+                        //----------------
+                        
+                        
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("04612328-4d6b-4339-aa9e-65775ac6d225")]
+                        construct faultMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2e3de60b-0d76-46b0-bc0a-f775e613aec5")]
+                            faultMsg = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Set Fault Message Properties
+                            faultMsg.Body.FailureCategory = "MessageBuild";
+                            faultMsg.Body.FaultCode = "FaultCodeVal";
+                            faultMsg.Body.FaultDescription = "FaultDescriptionVal";
+                            faultMsg.Body.FaultSeverity = Microsoft.Practices.ESB.ExceptionHandling.FaultSeverity.Critical;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b5b9bb8-0cf4-482f-9d9e-e666c6028974")]
+                        send (Port_3.Operation_1, faultMsg);
+                    }
+                }
+            }
+        }
+    }
+}
+
